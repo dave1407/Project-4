@@ -103,14 +103,15 @@ Random Forest is an ensemble learning algorithm that constructs multiple decisio
 The clean data for 2012 and 2016 was retrieved from the mongo database. The columns that were not considered features or targets were dropped. Then training and testing sets were created and the target result was dropped from the data. The model was scaled with a standard scaler and the model was trained.
 The results were analyzed and found acceptable with an accuracy of 0.87
 
-The model was used on 2020 data and found that it performed even better than during testing. The accuracy level obtained with the 2020 data was 0.89.
+The model was used on 2020 data and found that it performed even better than during testing, with an accuracy score of 0.89.
 
 
 # Conclusion
 
 After careful evaluation of all the models created, we recommend the Random Forest model as the most optimal model.  
 
-Data sources: 
+# Data sources: 
+
 Census.gov: API call to get demographic data by year (2016 and 2020)
 Election winners by county:
 http://www.structnet.com/instructions/zip_min_max_by_state.html](https://dataverse.harvard.edu/file.xhtml?fileId=6689930&version=11.0
@@ -118,9 +119,10 @@ http://www.structnet.com/instructions/zip_min_max_by_state.html](https://dataver
 
 
 # A few libraries used:
-SKlearn
-Matplotlib
-Numpy
-Census
-Tensorflow
+
+*SKlearn
+*Matplotlib
+*Numpy
+*Census
+*Tensorflow
 
