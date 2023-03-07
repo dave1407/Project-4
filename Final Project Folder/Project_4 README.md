@@ -89,7 +89,19 @@ weighted avg       0.80      0.82      0.77      1502
 ## Predict year 2020 results using the Model:
 After training and testing the model, we were able to feed 2020 data through the model and get the predicted winners.
 
-The group beleived that there may be inbalance in the target data so the SMOTE (Synthetic Minority Oversampling Technique) was applied to the SVM and Logistics Regression models. Running the SVM using SMOTE created an even lower score across all metrics (accuracy, precison and resilience). As a result, SMOTE was removed from the SVM model.  
+The group beleived that there may be inbalance in the target data so the SMOTE (Synthetic Minority Oversampling Technique) was applied to the SVM and Logistics Regression models. Running the SVM using SMOTE didn't appear to significantly improve the metrics (accuracy, precison and resilience). As a result, SMOTE was removed from the SVM model.  
+
+SVM SMOTE details
+Test Acc: 0.799
+
+              precision    recall  f1-score   support
+
+    Democrat       0.52      0.38      0.44       311
+  Republican       0.85      0.91      0.88      1191
+
+    accuracy                           0.80      1502
+   macro avg       0.68      0.65      0.66      1502
+weighted avg       0.78      0.80      0.79      1502
 
 
 # Logisitcs Regression
