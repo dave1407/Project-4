@@ -96,10 +96,18 @@ After training and testing the model, we were able to feed 2020 data through the
 
 # Random Forest
 
+Random Forest is an ensemble learning algorithm that constructs multiple decision trees at training time and outputs the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. We found this model interesting because we can see how the each feature of the model impacts the predicted results.
+The clean data for 2012 and 2016 was retrieved from the mongo database. The columns that were not considered features or targets were dropped.
+Then training and testing sets were created and the target result was dropped from the data. The model was scaled with a standard scaler and the model was trained.
+The results were analyzed and found acceptable with an accuracy of 0.87.<br />
+The model was used on 2020 data and found that it performed even better than during testing. The accuracy level obtained with the 2020 data was 0.89.
+
+
 
 
 # Conclusion
 
+After careful evaluation of all the models created, we recommend the Random Forest model as the most optimal model.  
 
 Data sources: 
 Census.gov: API call to get demographic data by year (2016 and 2020)
