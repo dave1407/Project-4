@@ -89,6 +89,7 @@ weighted avg       0.80      0.82      0.77      1502
 ## Predict year 2020 results using the Model:
 After training and testing the model, we were able to feed 2020 data through the model and get the predicted winners.
 
+The group beleived that there may be inbalance in the target data so the SMOTE (Synthetic Minority Oversampling Technique) was applied to the SVM and Logistics Regression models. Running the SVM using SMOTE created an even lower score across all metrics (accuracy, precison and resilience). As a result, SMOTE was removed from the SVM model.  
 
 
 # Logisitcs Regression
