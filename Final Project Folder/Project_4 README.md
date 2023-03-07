@@ -20,6 +20,27 @@ Overall, understanding the relationship between demographic factors and election
 # Modeling approach:
 Because we are trying to classify the election reuslts (Republican or Democrate) this project focuses exclusively on supervised machine learning techniques 
 
+# <span style="color: blue">Instructions:</span>
+
+Run <span style="color: green"> election_ETL.ipynb </span> file firts<br />
+Check you have the below dependencies:<br />
+
+%matplotlib inline <br />
+from matplotlib import pyplot as plt<br />
+from sklearn.datasets import make_classification<br />
+import numpy as np<br />
+import pandas as pd<br />
+from sklearn.ensemble import RandomForestClassifier<br />
+from sklearn.linear_model import LogisticRegression<br />
+from sklearn.model_selection import train_test_split<br />
+from sklearn.preprocessing import StandardScaler<br />
+import pymongo<br />
+import requests<br />
+from sklearn.metrics import confusion_matrix<br />
+import seaborn as sns<br />
+from sklearn.metrics import roc_curve, roc_auc_score<br />
+
+
 # KNN Model
 
 ## Prepare the Data :
@@ -73,6 +94,7 @@ After training and testing the model, we were able to feed 2020 data through the
 
 # Neural Netork
 
+# Random Forest
 
 
 
