@@ -11,7 +11,8 @@ Nicoleta Cosereanu
 # Project Proposal: 
 Create a model to predict election winners using various machine learning techniques
 
-Intro: The relationship between demographic factors and election results is complex and multifaceted. While population size can be an important factor in determining election outcomes, it is not the only factor that matters. Other demographic factors such as income, age, and poverty rate can also play a role in shaping voter preferences. 
+# Intro: 
+The relationship between demographic factors and election results is complex and multifaceted. While population size can be an important factor in determining election outcomes, it is not the only factor that matters. Other demographic factors such as income, age, and poverty rate can also play a role in shaping voter preferences. 
 
 For example, areas with higher household income may tend to vote for candidates who advocate for policies that benefit the wealthy, while areas with lower household income may be more likely to support candidates who prioritize policies that address economic inequality. Similarly, areas with a higher average age may be more likely to vote for candidates who focus on issues such as retirement benefits and healthcare for seniors, while areas with a younger population may be more concerned with issues such as education and job opportunities.
 
@@ -20,9 +21,10 @@ Overall, understanding the relationship between demographic factors and election
 # Modeling approach:
 Because we are trying to classify the election reuslts (Republican or Democrate) this project focuses exclusively on supervised machine learning techniques 
 
-# <span style="color: blue">Instructions:</span>
+# Instructions:
 
-Run <span style="color: green"> election_ETL.ipynb </span> file firts<br />
+Run  election_ETL.ipynb file firts<br />
+
 Check you have the below dependencies:<br />
 
 %matplotlib inline <br />
@@ -97,12 +99,11 @@ After training and testing the model, we were able to feed 2020 data through the
 # Random Forest
 
 Random Forest is an ensemble learning algorithm that constructs multiple decision trees at training time and outputs the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. We found this model interesting because we can see how the each feature of the model impacts the predicted results.
-The clean data for 2012 and 2016 was retrieved from the mongo database. The columns that were not considered features or targets were dropped.
-Then training and testing sets were created and the target result was dropped from the data. The model was scaled with a standard scaler and the model was trained.
-The results were analyzed and found acceptable with an accuracy of 0.87.<br />
+
+The clean data for 2012 and 2016 was retrieved from the mongo database. The columns that were not considered features or targets were dropped. Then training and testing sets were created and the target result was dropped from the data. The model was scaled with a standard scaler and the model was trained.
+The results were analyzed and found acceptable with an accuracy of 0.87
+
 The model was used on 2020 data and found that it performed even better than during testing. The accuracy level obtained with the 2020 data was 0.89.
-
-
 
 
 # Conclusion
@@ -111,16 +112,15 @@ After careful evaluation of all the models created, we recommend the Random Fore
 
 Data sources: 
 Census.gov: API call to get demographic data by year (2016 and 2020)
-Xxx: winners by state
-http://www.structnet.com/instructions/zip_min_max_by_state.html: Zip Code by state
+Election winners by county:
+http://www.structnet.com/instructions/zip_min_max_by_state.html](https://dataverse.harvard.edu/file.xhtml?fileId=6689930&version=11.0
 
 
 
-Libraries:
+# A few libraries used:
 SKlearn
 Matplotlib
 Numpy
 Census
 Tensorflow
 
-Additional Files 
