@@ -94,7 +94,25 @@ After training and testing the model, we were able to feed 2020 data through the
 # Logisitcs Regression
 
 
-# Neural Netork
+# Neural Network
+Neural networks can help computers make intelligent decisions with limited human assistance. This is because they can learn and model the relationships between input and output data that are nonlinear and complex. 
+
+Neural networks consist of multiple layers of interconnected nodes, each building upon the previous layer to refine and optimize the prediction or categorization. This progression of computations through the network is called forward propagation. The input and output layers of a deep neural network are called visible layers. The input layer is where the deep learning model ingests the data for processing, and the output layer is where the final prediction or classification is made.
+
+Another process called backpropagation uses algorithms to calculate errors in predictions and then adjusts the weights and biases of the function by moving backwards through the layers in an effort to train the model. Together, forward propagation and backpropagation allow a neural network to make predictions and correct for any errors accordingly. Over time, the algorithm becomes gradually more accurate.
+
+For this project we used tensorflow library to model a neural network for a US elections dataset based on demographics by US county.
+
+We trained the model with 2012 and 2016 data, getting these results:
+
+![image](https://user-images.githubusercontent.com/10065386/223406694-561c74c9-d000-4cd4-b4c2-bbb313383a20.png)
+
+Then we validated the model with 2020 data, getting these results:
+
+![image](https://user-images.githubusercontent.com/10065386/223406948-d593b7a9-2709-444b-95f9-09072b5ee53d.png)
+
+Eventhough this data does not reflect the actual winner for 2020 US election, who was a Democrat. We can say that the model does its work, as it ended up having an 0.87 average accuracy for the data we feeded.
+
 
 # Random Forest
 
